@@ -1,1 +1,16 @@
 @charset "ISO-8859-1";
+button {
+  visibility: hidden;
+}
+table, td {
+  border: 1px solid black;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+td{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  }
