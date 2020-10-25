@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-public class RestaurantpickerController 
+public class RestaurantPickerController
 {
 	@RequestMapping("/")
 	public String start()
