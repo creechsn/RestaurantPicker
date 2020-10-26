@@ -2,7 +2,6 @@ package com.restaurantpicker;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-
 @Controller
 public class RestaurantpickerController 
 {
@@ -15,6 +14,6 @@ public class RestaurantpickerController
 	@RequestMapping("/choices")
 	public String index()
 	{
-		return "restaurantchoice";
+		return "restaurantChoice";
 	}
 }
