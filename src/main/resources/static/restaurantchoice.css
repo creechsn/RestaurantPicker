@@ -14,3 +14,18 @@ td{
   padding: 10px;
   text-align: center;
   }
+  
+  
+  
+  
+  .row {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#RestaurantImage{
+	width: 250px;
+	height: 250px;
+}

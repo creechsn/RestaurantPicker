@@ -60,4 +60,5 @@ function initMap() {
         position: goodfellas,
         map: mapCincy,
       });
+
     }
