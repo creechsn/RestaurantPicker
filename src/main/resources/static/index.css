@@ -9,3 +9,19 @@
     width:50%;
     height:400px;
 }
+
+.row {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#desc {
+    tex-align: center;
+}
+
+#FoodTypes{
+	justify-content: left;
+    align-items: left;
+}

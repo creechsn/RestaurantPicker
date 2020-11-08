@@ -1,24 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../static/index.css">
+<link rel="stylesheet" href="../static/index.css">
+<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"crossorigin="anonymous">
+
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoEEepG0o3JkfmejyT-bn3S9EPLJHCLAI&callback=initMap"
+	type="text/javascript"></script>
+<script src="../static/index.js"></script>
+<script src="../main/java/RestaurantpickerApplication.java"></script>
 </head>
 <body>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoEEepG0o3JkfmejyT-bn3S9EPLJHCLAI&callback=initMap"
-type="text/javascript"></script>
+	<div class="container">
+		<div class="row">
+			<h1>
+				<b>Restaurant Picker</b>
+			</h1>
+		</div>
 
-    <script src="../static/index.js"></script>
-<h1>Restaurant Picker</h1>
-<h2>UC Area</h2>
+		<div class="row" id="desc">
+			<p>
+				Need help deciding on where to eat? Look no further! Restaurant
+				Picker is here to help!<br> Select your location and let us
+				find a restaurant near your location. Or perhaps you know what type
+				of food you want.<br> Then select from our drop down of food
+				choices and let us find something that suits your needs!<br> We
+				can also pick from a set of restaurants you have selected. <br>
+				Just type in the restaurants and their locations and we will pick
+				for you! No need to decide!
+			</p>
+			<br> <br>
+		</div>
+		<div class="row">
+			<h2>UC Area</h2>
+		</div>
+		<div class="row">
+			<div id="mapUC"></div>
+		</div>
+		<br>
+		<div class="row">
+			<h2>Downtown Cincy</h2>
+		</div>
+		<div class="row">
+			<div id="mapCincy"></div>
+		</div>
 
-<div id="mapUC"></div>
+		<div class="row" id="FoodTypes">
+			<div class=col-sm-10">
+				<div class="dropdown">
+					<b>Food Type:</b>
+					<button class="btn btn-secondary dropdown-toggle" type="button"
+						id="dropdownMenuButton" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">Choose a food
+						type</button>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<button class="btn btn-secondary" type="submit">Search</button>
+			</div>
+		</div>
 
-<br>
-<h2>Downtown Cincy</h2>
-<div id="mapCincy"></div>
 
+		<div class="row">
+			<div class=col">
+				<span class="glyphicon">&#xe081;</span><h4>Restaurant Location</h4><span class="glyphicon">&#xe083;</span>
 
+			</div>
 
+		</div>
 
+	</div>
 </body>
 </html>
