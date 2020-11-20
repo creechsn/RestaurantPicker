@@ -12,13 +12,4 @@ public class RestaurantpickerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RestaurantpickerApplication.class, args);
 	}
-	
-	
-	public static void FoodTypes(String[] args){
-		
-		List<String> FoodTypesList = Arrays.asList("American","Korean","Mexican","Japanese","Chinese","Italian","Indian");
-
-		
-	}
-
 }
