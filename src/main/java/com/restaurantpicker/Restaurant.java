@@ -5,9 +5,9 @@ import java.util.Collections;
 
 public class Restaurant implements IRestaurant {
 
-	public String name;
-	public String URL;
-	public String description;
+	public String restaurantName;
+	public String restaurantURL;
+	public String restaurantDescription;
 	
 	@Override
 	public ArrayList<Restaurant> selectRestaurant(ArrayList<Restaurant> restaurants) {
@@ -32,27 +32,27 @@ public class Restaurant implements IRestaurant {
 
 
 	public String getName() {
-		return name;
+		return restaurantName;
 	}
 
 
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String restaurantName) {
+		this.restaurantName = restaurantName;
 	}
 
 
 	public String getURL() {
-		return URL;
+		return restaurantURL;
 	}
 
 
-	public void setURL(String uRL) {
-		URL = uRL;
+	public void setURL(String restaurantURL) {
+		restaurantURL = restaurantURL;
 	}
 
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setDescription(String restaurantDescription) {
+		this.restaurantDescription = restaurantDescription;
 	}
 
 }
