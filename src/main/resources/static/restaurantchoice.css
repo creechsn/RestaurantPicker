@@ -1,6 +1,6 @@
 @charset "ISO-8859-1";
 button {
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 table, td {
   border: 1px solid black;

@@ -12,7 +12,7 @@ public class RestaurantpickerController
 	}
 	
 	@RequestMapping("/choices")
-	public String index()
+	public String choices()
 	{
 		return "restaurantChoice";
 	}
