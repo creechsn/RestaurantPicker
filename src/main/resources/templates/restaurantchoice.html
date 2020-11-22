@@ -1,60 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../static/restaurantchoice.css">
+<link rel="stylesheet" href="../static/restaurantchoice.css">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<script src="../static/restaurantchoice.js"></script>
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoEEepG0o3JkfmejyT-bn3S9EPLJHCLAI&callback=initMap"
+	type="text/javascript"></script>
 </head>
 <body>
-<script src="../static/restaurantchoice.js"></script>
+	<div class="container">
+		<div class="row">
+			<h2>
+				<b>Selected Restaurant</b>
+			</h2>
+		</div>
+		<div class="row">
+			<p>Please see your choices below!</p>
+		</div>
+		<div class="row">
+			<div class="col"><img src="../Images/Stock-image.jpg" id="RestaurantImage" alt="Image Not Available"></div>
+			<div class="col">
+			<div class="row">
+			Restaurant:
+			</div>
+			<div class="row">
+			Location:
+			</div>
+			<div class="row">
+			Website:
+			</div>
+			</div>
+			<div class="col"><div id="mapUC"></div></div>
+		</div>
 
-<p>Here are some nearby resturants</p>
 
-<table id="myTable">
-    <tr>
-        <th>Restaurant Name</th>
-        <th>Price</th>
-        <th>Rating</th>
-        <th>Cuisine</th>
-    </tr>
-    <tr>
-        <td>The University of Cincinnati Cafeteria</td>
-        <td>$$</td>
-        <td>3</td>
-        <td>Variety</td>
-    </tr>
-    <tr>
-        <td>The Mac Shack</td>
-        <td>$$$</td>
-        <td>4.5</td>
-        <td>Variety</td>
-    </tr>
-    <tr>
-        <td>Kroger</td>
-        <td>$$</td>
-        <td>5</td>
-        <td>Variety</td>
-    </tr>
-    <tr>
-        <td>Goodfellas</td>
-        <td>$$</td>
-        <td>4.5</td>
-        <td>Bar</td>
-    </tr>
-    <tr>
-        <td>The Eagle</td>
-        <td>$$</td>
-        <td>4.6</td>
-        <td>Bar</td>
-    </tr>
-    <tr>
-        <td>HangOverEasy</td>
-        <td>$$</td>
-        <td>3</td>
-        <td>Burgers/Bar</td>
-    </tr>
-</table>
-<br>
 
-<button onclick="myCreateFunction()">Create row</button>
 
+
+		<div class="row">
+			<h2>
+				<b>Other Restaurants to consider</b>
+			</h2>
+		</div>
+		<table id="myTable">
+			<tr>
+				<th>Restaurant Name</th>
+				<th>Price</th>
+				<th>Rating</th>
+				<th>Cuisine</th>
+			</tr>
+			<tr>
+				<td>The University of Cincinnati Cafeteria</td>
+				<td>$$</td>
+				<td>3</td>
+				<td>Variety</td>
+			</tr>
+			<tr>
+				<td>The Mac Shack</td>
+				<td>$$$</td>
+				<td>4.5</td>
+				<td>Variety</td>
+			</tr>
+			<tr>
+				<td>Kroger</td>
+				<td>$$</td>
+				<td>5</td>
+				<td>Variety</td>
+			</tr>
+			<tr>
+				<td>Goodfellas</td>
+				<td>$$</td>
+				<td>4.5</td>
+				<td>Bar</td>
+			</tr>
+			<tr>
+				<td>The Eagle</td>
+				<td>$$</td>
+				<td>4.6</td>
+				<td>Bar</td>
+			</tr>
+			<tr>
+				<td>HangOverEasy</td>
+				<td>$$</td>
+				<td>3</td>
+				<td>Burgers/Bar</td>
+			</tr>
+		</table>
+		<br>
+
+		<button onclick="myCreateFunction()">Create row</button>
+	</div>
 </body>
 </html>
